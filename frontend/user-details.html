@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ReGenix - User Details</title>
+  <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Sulphur+Point&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="nav-logo">
+      <a href="index.html" class="nav-logo-link">ReGenix</a>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html" class="nav-link">Home</a></li>
+      <li><a href="user-details.html" class="nav-link">User Details</a></li>
+    </ul>
+  </nav>
+
+  <div class="user-details-container">
+    <h2 class="user-details-title">Enter Your Details</h2>
+    <form id="user-details-form" class="user-details-form">
+      <div class="form-row">
+        <label>
+          Name:
+          <input type="text" name="name" id="name" required>
+        </label>
+        <label>
+          Age:
+          <input type="number" name="age" id="age" required>
+        </label>
+      </div>
+      <div class="form-row">
+        <label>
+          Height (cm):
+          <input type="number" name="height" id="height" required>
+        </label>
+        <label>
+          Weight (kg):
+          <input type="number" name="weight" id="weight" required>
+        </label>
+      </div>
+      <div class="form-row">
+        <label>
+          Goal Weight (kg):
+          <input type="number" name="goalWeight" id="goalWeight" required>
+        </label>
+        <label>
+          Fitness Goal:
+          <input type="text" name="fitnessGoal" id="fitnessGoal" required>
+        </label>
+      </div>
+      <button type="submit" class="user-details-button">Submit Details</button>
+    </form>
+
+    <div id="user-details-table-container" class="user-details-table-container" style="display: none;">
+      <h3>Your Details</h3>
+      <table class="user-details-table">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Height (cm)</th>
+            <th>Weight (kg)</th>
+            <th>Goal Weight (kg)</th>
+            <th>Fitness Goal</th>
+          </tr>
+        </thead>
+        <tbody id="user-details-data">
+          <!-- This will be filled by JavaScript -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <script src="js/user-details.js"></script>
+</body>
+</html>
